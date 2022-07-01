@@ -1,4 +1,4 @@
-let text = "Здесь дизайн становится сайтом";
+let text = "{Здесь дизайн становится сайтом};";
 let delay = 100; // cкорость
 let elem = document.getElementById("autoText");
  

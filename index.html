@@ -16,16 +16,16 @@
             <div class="header__container _container">
                 <nav class="header__menu">
                     <ul class="header__menu_list">
-                        <li class="header__menu_item"><a href="" class="header__menu_link">Главная</a></li>
-                        <li class="header__menu_item"><a href="" class="header__menu_link">Обо мне</a></li>
-                        <li class="header__menu_item"><a href="" class="header__menu_link">Навыки</a></li>
+                        <li class="header__menu_item"><a href="#welcome" class="header__menu_link">Главная</a></li>
+                        <li class="header__menu_item"><a href="#about" class="header__menu_link">Обо мне</a></li>
                         <li class="header__menu_item"><a href="" class="header__menu_link">Портфолио</a></li>
+                        <li class="header__menu_item"><a href="" class="header__menu_link">Навыки</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main class="main">
-            <div class="main__welcome welcome">
+            <div id="welcome" class="main__welcome welcome">
                 <div class="welcome__container _container">
                     <div class="welcome__title-wrapper">
                         <div class="welcome__title">
@@ -41,8 +41,53 @@
                         </div>
                     </div>
                     <div id="autoText" class="welcome__autotext"></div>
-                    <div class="welcome__button">
-                        <button class="button__show-more"></button>
+                    <div class="welcome__showmore">
+                        <button class="welcome__button">
+                            <a href="#about">
+                                <p>Узнать больше</p>
+                                <div class="button__show-more">
+                                    <img src="img/arrow-down.png" alt="">
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="about" class="main__about about">
+                <div class="about__container _container">
+                    <h2 class="about__title">
+                        Обо мне
+                    </h2>
+                    <div class="about__text-block">
+                        <p class="about__text text-about-left emerging-from-right">
+                            <span>{</span>&nbspМеня зовут Юрий, я - веб-разработчик.&nbsp<span>}</span>
+                        </p>
+                        <p class="about__text text-about-right emerging-from-left">
+                            <span>{</span>&nbspСпособность к самообучению, глубокий интерес к сфере разработки сайтов и творческий подход к делу позволяют мне нарабатывать профессионализм в этом направлении.&nbsp<span>}</span>
+                        </p>
+                        <p class="about__text text-about-left emerging-from-right">
+                            <span>{</span>&nbspНахожусь в поиске интересных проектов, в которых смогу оттачивать старые и получать новые навыки, а также расширять свой кругозор в веб-дизайне и веб-разработке.&nbsp<span>}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__portfolio portfolio">
+                <div id="portfolio" class="portfolio__container _container">
+                    <h2 class="portfolio__title">Портфолио</h2>
+                    <div class="portfolio__items">
+                        <div class="portfolio__item">
+                            <div class="portfolio__inner">
+                                <img class="portfolio__image" src="img/kokido 1.png" alt="">
+                                <div class="portfolio__overlay"></div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__inner">
+                                <img class="portfolio__image" src="img/relvise 1.png" alt="">
+                                <div class="portfolio__overlay"></div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -50,5 +95,11 @@
         <footer class="footer"></footer>
     </div>
     <script src="auto-text.js"></script>
+    <script src="emerging.js"></script>
+    <script src="scroll-by-link.js"></script>
+
+    <!-- <script src="jquery.min.js"></script>
+    <script src="slick.js"></script>
+    <script src="slider-js.js"></script> -->
 </body>
 </html>
