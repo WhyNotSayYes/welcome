@@ -291,6 +291,15 @@ h2 {
     transform: translateX(0);
     transition: 1s ease;
 }
+.emerging-from-bottom {
+	opacity: 0;
+    transform: translateY(200px);	
+}
+.emerging-from-bottom.element-show {
+	opacity: 1;
+    transform: translateY(0);
+    transition: 1s ease;
+}
 
 /*================================PORTFOLIO========================================*/
 .slick-list {
@@ -343,6 +352,7 @@ h2 {
 }
 .portfolio__inner {
 	position: relative;
+	cursor: pointer;
 }
 .portfolio__image {
 }
@@ -352,7 +362,7 @@ h2 {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background:rgba(206, 142, 22, 0.507);
+	background:rgba(77, 77, 77, 0.507);
 	z-index: 10;
 	opacity: 0;
 	transition: .3s ease;
