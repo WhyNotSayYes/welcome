@@ -9,7 +9,7 @@ function onEntry(entry) {
   let options = {
     threshold: [0.5] };
   let observer = new IntersectionObserver(onEntry, options);
-  let elements = document.querySelectorAll('.emerging-from-left, .emerging-from-right, .emerging-from-bottom');
+  let elements = document.querySelectorAll('.emerging-from-left, .emerging-from-right, .emerging-from-bottom, .emerging-from-top, .emerging-whith-scale');
   
   for (let elm of elements) {
     observer.observe(elm);
