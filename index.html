@@ -14,12 +14,16 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container _container">
+                <div class="header__burger">
+                    <span></span>
+                </div>
                 <nav class="header__menu emerging-from-top">
                     <ul class="header__menu_list">
                         <li class="header__menu_item"><a href="#welcome" data-scroll="#welcome" class="header__menu_link" target="_blank">Главная</a></li>
                         <li class="header__menu_item"><a href="#about" data-scroll="#about" class="header__menu_link" target="_blank">Обо мне</a></li>
                         <li class="header__menu_item"><a href="#services" data-scroll="#services" class="header__menu_link" target="_blank">Услуги</a></li>
                         <li class="header__menu_item"><a href="#portfolio" data-scroll="#portfolio" class="header__menu_link" target="_blank">Портфолио</a></li>
+                        <li class="header__menu_item"><a href="#contacts" data-scroll="#contacts" class="header__menu_link" target="_blank">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__social emerging-from-top">
@@ -162,7 +166,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main__contacts contacts">
+            <div id="contacts" class="main__contacts contacts">
                 <div class="contacts__container _container">
                     <h2 class="contacts__title">
                         Мои контакты
@@ -194,6 +198,6 @@
 
     <script src="jquery.min.js"></script>
     <script src="scroll.js"></script>
-
+    <script src="burger.js"></script>
 </body>
 </html>
