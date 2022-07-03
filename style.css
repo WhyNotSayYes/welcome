@@ -46,6 +46,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 /*========================================================================*/
 .wrapper {
+	overflow: hidden;
 }
 ._container {
 	max-width: 1250px;
@@ -314,7 +315,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	/* height: 100vh; */
 }
 .about {
-	margin: 35px 0 0 0;
+	margin: 100px 0 0 0;
 }
 .about__container {
 	text-align: center;
@@ -343,13 +344,45 @@ h2 {
 	color: rgba(46, 168, 199, 0.418);
 	animation: opacity 2s infinite;
 }
+.about__content {
+	display: flex;
+}
+.about__image-block {
+	flex: 0 1 32.5%;
+	padding: 0 0 0 15px;
+}
+.about__image-block_inner {
+	position: relative;
+	max-width: 100%;
+	height: auto;
+}
+.about__image-block_image {
+	width: 100%;
+}
+.about__image-block_inner:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top: 240px solid #000;
+    border-left: 240px solid transparent;
+}
+.about__image-block_inner:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom: 240px solid #000;
+    border-right: 240px solid transparent;
+}
 .about__text-block {
+	flex: 0 1 67.5%;
 	display: flex;
 	flex-direction: column;
+	padding: 0 15px 0 0;
 }
 .about__text {
 	text-align: justify;
-	width: 50%;
 	line-height: 120%;
 }
 .about__text:not(:last-child) {
@@ -369,7 +402,7 @@ h2 {
 
 .emerging-from-left {
 	opacity: 0;
-    transform: translateX(-500px);
+    transform: translateX(-100px);
 }
 .emerging-from-left.element-show {
 	opacity: 1;
@@ -378,7 +411,7 @@ h2 {
 }
 .emerging-from-right {
 	opacity: 0;
-    transform: translateX(500px);
+    transform: translateX(100px);
 }
 .emerging-from-right.element-show {
 	opacity: 1;
@@ -417,7 +450,7 @@ h2 {
 .main__services {
 }
 .services {
-	margin: 35px 0 0 0;
+	margin: 100px 0 0 0;
 }
 .services__container {
 	text-align: center;
@@ -490,7 +523,7 @@ h2 {
 	/* height: 100vh; */
 }
 .portfolio {
-	margin: 35px 0 0 0;
+	margin: 100px 0 0 0;
 }
 .portfolio__container {
 	text-align: center;
@@ -612,7 +645,7 @@ h2 {
 .main__contacts {
 }
 .contacts {
-	margin: 70px 0 0 0;
+	margin: 100px 0 0 0;
 }
 .contacts__container {
 	text-align: center;
@@ -643,7 +676,7 @@ h2 {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	margin: 35px 0;
+	margin: 35px 0 100px 0;
 }
 .contacts__content_list {
 }
