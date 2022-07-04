@@ -5,5 +5,6 @@ $(document).ready(function() {
     })
     $('.header__menu_item').click(function(eVent) {
         $('.header__burger,.header__menu').removeClass('active');
+        $('body').removeClass('lock');
     })
 })
