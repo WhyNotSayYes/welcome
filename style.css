@@ -117,10 +117,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: rgb(206, 141, 22);
 	transition: .3s ease;
 }
-/* .header__menu_item:hover:before,
+.header__menu_item:hover:before,
 .header__menu_item:hover:after {
 	opacity: 1;
-} */
+}
 .header__menu_item:not(:last-child) {
 	margin: 0 64px 0 0;
 }
@@ -652,7 +652,7 @@ h2 {
 	padding: 0 15px 0 0;
 }
 .about__text {
-	text-align: justify;
+	text-align: left;
 	line-height: 120%;
 }
 .about__text:not(:last-child) {
