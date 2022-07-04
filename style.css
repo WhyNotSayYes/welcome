@@ -59,6 +59,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .contacts {
 	padding-top: 65px;
 }
+
 /*================================HEADER========================================*/
 .header {
 	position: fixed;
@@ -113,10 +114,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: rgb(206, 141, 22);
 	transition: .3s ease;
 }
-.header__menu_item:hover:before,
+/* .header__menu_item:hover:before,
 .header__menu_item:hover:after {
 	opacity: 1;
-}
+} */
 .header__menu_item:not(:last-child) {
 	margin: 0 64px 0 0;
 }
@@ -1004,9 +1005,9 @@ h2 {
 	border-bottom: 50px solid #000;
 	border-right: 100px solid transparent;
 }
-.portfolio__overlay:hover {
+/* .portfolio__overlay:hover {
 	opacity: 1;
-}
+} */
 .overlay__item {
 	background: url(../welcome/img/eye.png);
 	width: 60px;
@@ -1133,6 +1134,24 @@ h2 {
 .contacts__content_link {
 }
 
+/*Contacts Media*/
+@media (max-width: 767px) {
+	.contacts__content {
+		margin: 35px 0;
+	}
+}
+@media (max-width: 665px) {
+	.contacts__content_item {
+		font-size: 30px;
+	}
+}
+@media (max-width: 515px) {
+	.contacts__content_item {
+		font-size: 25px;
+	}
+}
+
+/*================================FOOTER========================================*/
 .footer {
 	height: 70px;
 }
@@ -1159,4 +1178,37 @@ h2 {
 	font-size: 10px;
 	line-height: 130%;
 	color:rgba(255, 255, 255, 0.459);
+}
+
+@media (max-width: 665px) {
+	.about__title, .services__title, .portfolio__title, .contacts__title {
+		font-size: 30px;
+	}
+	.about__title:after, .services__title:after, .portfolio__title:after, .contacts__title:after {
+		right: -96px;
+	}
+	.about__title:before, .services__title:before, .portfolio__title:before, .contacts__title:before {
+		left: -84px;
+	}
+}
+@media (max-width: 515px) {
+	.about__title, .services__title, .portfolio__title, .contacts__title {
+		font-size: 25px;
+	}
+	.about__title:after, .services__title:after, .portfolio__title:after, .contacts__title:after {
+		right: -79px;
+	}
+	.about__title:before, .services__title:before, .portfolio__title:before, .contacts__title:before {
+		left: -69px;
+	}
+} 
+
+@media (min-width: 1024px) {
+	.portfolio__overlay:hover {
+		opacity: 1;
+	}
+	.header__menu_item:hover:before,
+	.header__menu_item:hover:after {
+	opacity: 1;
+}
 }
