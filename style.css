@@ -513,17 +513,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 @media (max-width: 405px) {
 	.welcome__title {
 		display: block;
-		height: 56px;
-		line-height: 28px;
-		font-size: 25px;
+		height: 62px;
+		line-height: 31px;
+		font-size: 27px;
 	}
 	.welcome__list-wrapper {
-		height: 28px;
+		height: 31px;
 		overflow: hidden;
 	}
 	.welcome__list {
 		padding: 0;
-		height: 112px;
+		height: 124px;
 	}
 }
 /*================================ABOUT========================================*/
